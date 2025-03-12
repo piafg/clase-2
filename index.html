@@ -91,9 +91,9 @@
 
             barras.forEach((d, i) => {
                 graficaBarras.innerHTML += `<g transform="translate(0,${i*15})">
-                    <rect x="0" y="0" width="${d.numero/200}" height="10" />
+                    <rect x="0" y="0" width="${d.numero/2000}" height="10" />
                     <text x="3" y="7" fill="white" font-size="5">${d.region}</text>
-                    <text x="${(d.numero/200)+3}" y="7" font-size="6">${new Intl.NumberFormat("es-ES").format(d.numero)} Total de establecimientos</text>
+                    <text x="${(d.numero/2000)+20}" y="7" font-size="6">${new Intl.NumberFormat("es-ES").format(d.numero)} Total de establecimientos</text>
                 </g>`
             });
         </script>
