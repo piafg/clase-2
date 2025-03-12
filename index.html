@@ -59,7 +59,7 @@
             // la manera de despliegue de las coordenadas del Eje Y nos exige un ajuste, que copiamos de https://stackoverflow.com/questions/39560206/change-0-0-from-svg
 
             lineal.censados.forEach((d, i) => {
-                coordenadas += ((i*50)+7) + "," + Math.round(d*0.000015) + " ";
+                coordenadas += ((i*50)+10) + "," + Math.round(d*0.000025) + " ";
                 momentos += `<text x="${i*50}" y="205" font-size="6">${lineal.censos[i]}</text> `;
 
             })
