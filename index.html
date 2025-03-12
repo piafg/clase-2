@@ -90,7 +90,7 @@
             const graficaBarras = document.querySelector("#barras");
 
             barras.forEach((d, i) => {
-                graficaBarras.innerHTML += `<g transform="translate(0,${i*15})">
+                graficaBarras.innerHTML += `<g transform="translate(0,${i*30})">
                     <rect x="0" y="0" width="${d.numero/10}" height="15" />
                     <text x="3" y="7" fill="white" font-size="5">${d.region}</text>
                     <text x="${(d.numero/10)+10}" y="7" font-size="6">${new Intl.NumberFormat("es-ES").format(d.numero)} Total de establecimientos</text>
